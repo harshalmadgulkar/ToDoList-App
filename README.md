@@ -1,6 +1,6 @@
 # ToDoList-App
  ToDo App using HTML, CSS & Vanilla JavaScript
- -Implemented IIFE, fetch API, Revealing Module Pattern, Event Listners, filter on Array, etc.
+ -Implemented IIFE, fetch API, Revealing Module Pattern, Event Listeners, filter on Array, etc.
 
 - Functionality
 	- Add a TODO
