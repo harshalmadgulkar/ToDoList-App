@@ -1,4 +1,6 @@
-var ToDoListApp = ( function () {
+//? Using IIFE Immediately Invoked Function Expression
+var ToDoListApp = 
+( function () {
     console.log("App Started");
     //? var a given to show how to get required vars/functions from one js file to global/ another js
     //? you can access in console using global var "ToDoListApp" i.e ToDoListApp.a
@@ -152,10 +154,10 @@ var ToDoListApp = ( function () {
     }
   
     // initializeApp(); //? uncomment if you want to start App from this js file & comment index.html :35
+
+    //? this will return the object which we want to access from global like "initializeApp" function to start and "a" for testing of Revealing Module Pattern
     return {
         initializeApp : initializeApp,
         a : a,
     }
-  })();
-
-
+})();
