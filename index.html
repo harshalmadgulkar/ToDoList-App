@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>ToDo List App</h1>
+    <div id="container">
+        <input placeholder="Add a task" class="add-task" id="add" data-helloWord="asdasdas">
+        <span id="total-tasks">Total tasks: <span id="tasks-counter">0</span></span>
+        <ul id="list">
+            <!-- <li>
+                <input type="checkbox" id="task1" data-id="12" class="custom-checkbox">
+                <label for="task1">Buy groceries</label>
+                <img src="bin.svg" class="delete" data-id="12" alt="">
+            </li> -->
+        </ul>
+    </div>
+
+    <!-- Scripts Connected Below -->
+
+    <!-- Below script used for global use i.e. it's without Revealing Module Pattern -->
+    <!-- <script src="todo.js"></script> -->
+
+    <script src="todoModule.js"></script>
+    <script type="text/javascript">
+        // test will show object returned from Revealing Module Pattern
+        // console.log(ToDoListApp);
+        ToDoListApp.initializeApp();    <!-- will start App from outside the "todoModule.js" file due to Revealing Module Pattern -->
+    </script>
+</body>
+
+</html>
